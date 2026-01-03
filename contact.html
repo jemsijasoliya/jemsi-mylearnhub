@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f7f9;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2b87b3;
+            padding: 10px 40px;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav-links li {
+            margin-left: 20px;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        
+        .logo {
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        
+        .footer {
+            background-color: #0b1528;
+            font-size: medium;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+        
+        .contact-container {
+            width: 100%;
+            min-height: 80vh;
+            padding: 60px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        
+        .contact-wrapper {
+            display: flex;
+            gap: 30px;
+            max-width: 1000px;
+            width: 100%;
+        }
+        
+        .info-card,
+        .form-card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+        
+        h2 {
+            color: #333;
+            margin-top: 0;
+        }
+        
+        .info-item {
+            margin-bottom: 20px;
+        }
+        
+        .info-item strong {
+            display: block;
+            margin-bottom: 5px;
+            color: black;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        .btn-submit {
+            width: 100%;
+            padding: 12px;
+            background-color: #0077b6;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .btn-submit:hover {
+            background-color: #005f91;
+        }
+        
+        @media (max-width: 768px) {
+            .contact-wrapper {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">📖LearnHub</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="enrolment.html">Enroll</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="contact-container">
+        <div class="contact-wrapper">
+            <section class="info-card">
+                <h2>Get In Touch</h2>
+                <p>Have questions? we'd love to hear from you. send us a message and we'll respond as soon as possible.</p>
+
+                <div class="info-item">
+                    <strong>✉ Email</strong>
+                    <p>info@learn.com</p>
+                    <p>support@learnhub.com</p>
+                </div>
+
+                <div class="info-item">
+                    <strong>📞 Phone</strong>
+                    <p>+91 1234567890</p>
+                    <p>mon-fri 9:00 AM 6:00 PM</p>
+                </div>
+
+                <div class="info-item">
+                    <strong>📍 Address</strong>
+                    <p>123 Education Street</p>
+                    <p>Bengalore, Karnataka 560001</p>
+                </div>
+
+                <div class="info-item">
+                    <strong>🕒 Business Hours</strong>
+                    <p>mon-fri 9:00 AM 6:00 PM</p>
+                    <p>saturday 10:00 Am - 4:00 PM</p>
+                </div>
+            </section>
+
+
+            <section class="form-card">
+
+                <h2>Send Us a Message</h2>
+                <form>
+                    <div class="form-group">
+                        <label>Your Name:</label>
+                        <input type="text" placeholder="Enter Your Name">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input type="email" placeholder="Enter Your Email">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <select>
+                                 <option>select a subject</option>    
+                                <option>Dfs</option>
+                                 <option>Cpp</option>
+                            </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>message:</label>
+                        <textarea rows="5" placeholder="write your message here"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">send message</button><br>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <div class="footer">
+        <footer>&copy 2014 LearnHub All rights Reserved.<br> Email:
+            <span style="color: skyblue;">info@learnhub.com </span>| phone: <span style="color: white;">+91 1234567890</span>
+
+        </footer>
+    </div>
+
+</body>
+
+</html>

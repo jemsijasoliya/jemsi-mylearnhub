@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>courses page</title>
+
+    <style>
+        .outer {
+            background-color: rgb(232, 232, 235);
+            margin: 40px;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2b87b3;
+            padding: 10px 40px;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav-links li {
+            margin-left: 20px;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        
+        .logo {
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        
+        .courses {
+            background-color: rgb(10, 121, 225);
+            color: rgb(49, 47, 47);
+            width: 950px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .courses p {
+            margin-top: auto;
+        }
+        
+        .main1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .box {
+            width: 300px;
+            height: 480px;
+            border-radius: 10px;
+            margin-bottom: 54px;
+        }
+        
+        .box1 {
+            background: linear-gradient(180deg, #672EDA 0%, #2e75b6 95%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 170px;
+            margin-right: 38px;
+        }
+        
+        .box2 {
+            background: linear-gradient(130deg, #fc6beb 40%, #de0f5e 90%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 170px;
+            margin-right: 38px;
+        }
+        
+        .box3 {
+            background: linear-gradient(230deg, #36d1dc 0%, #5b86e5 96%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 170px;
+            margin-right: 38px;
+        }
+        
+        .box4 {
+            background: linear-gradient(300deg, #ffd966 4%, #e14d3d 84%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 170px;
+            margin-right: 38px;
+        }
+        
+        .box5 {
+            background: linear-gradient(120deg, #2ec4c7 20%, #2f80ed 50%, #4b1fa6 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 170px;
+            margin-right: 38px;
+        }
+        
+        .box6 {
+            background: linear-gradient(300deg, #fcbefe 0%, #bdf6ff 63%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 170px;
+            margin-right: 38px;
+        }
+        
+        .div-summary h4 {
+            width: 150px;
+            background-color: skyblue;
+            color: rgb(24, 112, 236);
+            border-radius: 20px;
+            padding: 7px;
+            border: 0.5px solid rgb(201, 115, 115);
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        div p {
+            padding-bottom: 15px;
+        }
+        
+        .div-summary {
+            background-color: white;
+            color: black;
+            width: 240px;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgb(110, 109, 109);
+            padding-bottom: 26px;
+        }
+        
+        button {
+            background-color: rgb(10, 121, 225);
+            width: 250px;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-left: -4px;
+            margin-bottom: 10px;
+        }
+        
+        .span1 {
+            color: rgb(5, 212, 143);
+            font-weight: bold;
+            padding-left: 140px;
+        }
+        
+        .section1 {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            border-radius: 5px;
+            /* align-items: center; */
+        }
+        
+        .footer {
+            background-color: #0b1528;
+            font-size: medium;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="outer">
+        <nav class="navbar">
+            <div class="logo">📖LearnHub</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="enrolment.html">Enroll</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav><br><br>
+        <div class="main1">
+            <section class="courses">
+                <h2>Available Courses</h2>
+                <p>Choose from our wide range of professional courses</p>
+            </section>
+        </div><br><br>
+
+        <section class="section1">
+            <div class="box">
+                <div class="box1">
+                    <h1>💻</h1>
+                </div>
+
+                <div class="div-summary">
+                    <h4>Web Development</h4>
+                    <h2>Complete Web Development Courses</h2>
+
+                    <p style="border-bottom: 0.5px solid #b5d0e9;">
+                        Learn HTML,CSS,JavaScript and modern web technologies from bulk.
+                    </p>
+
+                    <span>11 weeks</span>
+                    <span class="span1">2,999</span> <br><br>
+
+                    <button type="submit">Enroll Now</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box2">
+                    <h1>🐍</h1>
+                </div>
+                <div class="div-summary">
+                    <h4>Programming</h4>
+                    <h2>Python Programming Masterclass</h2>
+
+                    <p style="border-bottom: 0.5px solid #b5d0e9;">
+                        Master Python Programming from basics to advanced concepts.
+                    </p>
+
+                    <span>⏰ 5 weeks</span>
+                    <span style="color: green;">2,499</span> <br><br>
+
+                    <button type="submit">Enroll Now</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box3">
+                    <h1>📊</h1>
+                </div>
+                <div class="div-summary">
+                    <h4>Data Science</h4>
+                    <h2>Science Fundamentals</h2>
+
+                    <p style="border-bottom: 0.5px solid #b5d0e9;">
+                        Learn data analysis, visualization and machine learning basics.
+                    </p>
+
+                    <span>⏰ 10 weeks</span>
+                    <span style="color: green;">2,999</span> <br><br>
+
+                    <button type="submit" style="margin-bottom: 20px">Enroll Now</button><br><br>
+                </div>
+            </div>
+        </section>
+
+        <section class="section1">
+            <div class="box">
+                <div class="box4">
+                    <h1>📱</h1>
+                </div>
+                <div class="div-summary">
+                    <h4>Mobile Development</h4>
+                    <h2>Mobile App Development</h2>
+
+                    <p style="border-bottom: 0.5px solid #b5d0e9;">
+                        Build mobile apps for IOS and Android using React Native..
+                    </p>
+
+                    <span>⏰ 12 weeks</span>
+                    <span style="color: green;">3,999</span> <br><br>
+
+                    <button type="submit" style="margin-bottom: 1px">Enroll Now</button><br><br>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box5">
+                    <h1>🎨</h1>
+                </div>
+                <div class="div-summary">
+                    <h4>Design</h4>
+                    <h2>UI/UX Design Complete Courses</h2>
+
+                    <p style="border-bottom: 0.5px solid #b5d0e9;">
+                        Learn user interface and experience design principles.
+                    </p>
+
+                    <span>⏰ 15 weeks</span>
+                    <span style="color: green;">2,799</span> <br><br>
+
+                    <button type="submit">Enroll Now</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box6">
+                    <h1>🤖</h1>
+                </div>
+                <div class="div-summary">
+                    <h4>AI & ML</h4>
+                    <h2>Artificial Intelligence Basics</h2>
+
+                    <p style="border-bottom: 0.5px solid #b5d0e9;">
+                        Introduction to AI, machine learning and networks.
+                    </p>
+
+                    <span>⏰ 10 weeks</span>
+                    <span style="color: rgb(11, 160, 68);">4,499</span> <br><br>
+
+                    <button type="submit">Enroll Now</button>
+                </div>
+            </div>
+        </section> <br><br>
+
+        <div class="footer">
+            <footer>&copy 2014 LearnHub All rights Reserved.<br> Email:
+                <span style="color: skyblue;">info@learnhub.com </span>| phone: <span style="color: white;">+91 1234567890</span>
+
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>
